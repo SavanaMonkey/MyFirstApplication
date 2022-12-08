@@ -6,12 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Application</title>
-    <link rel='stylesheet' href='./style.css'>
+    <link rel='stylesheet' href='./css/style.css'>
 </head>
 
 <body>
+    <!-- 이름 입력 폼 -->
+    <form id='login-form' class='hidden'>
+        <input required maxlength='12' type='text' placeholder='What is your name?' />
+        <input type='submit' value='Log In'>
+    </form>
+    <!-- 시계 -->
+    <h2 id='clock'>00:00:00</h2>
+    <!-- 인사말 -->
+    <h1 id='greeting' class='hidden'></h1>
+    <!-- 명언 -->
+    <div id='quote'>
+        <span></span>
+        <br />
+        <span></span>
+    </div>
 
+    <!-- JS 임베드 -->
+    <script src='./js/greeting.js'></script>
+    <script src='./js/clock.js'></script>
+    <script src='./js/quotes.js'></script>
 </body>
-<script src='./app.js'></script>
+
 
 </html>
